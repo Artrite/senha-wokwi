@@ -1,0 +1,39 @@
+{
+    "version": 1,
+    "author": "Arthur Nunes",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 96, "left": -100.76, "attrs": {} },
+      {
+        "type": "wokwi-membrane-keypad",
+        "id": "keypad1",
+        "top": -184.4,
+        "left": 111.2,
+        "attrs": {}
+      },
+      {
+        "type": "wokwi-lcd1602",
+        "id": "lcd1",
+        "top": -118.4,
+        "left": -244,
+        "attrs": { "pins": "i2c" }
+      }
+    ],
+    "connections": [
+      [ "esp:TX", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX", "$serialMonitor:TX", "", [] ],
+      [ "keypad1:R1", "esp:19", "green", [ "v0" ] ],
+      [ "keypad1:R2", "esp:18", "green", [ "v0" ] ],
+      [ "keypad1:R3", "esp:5", "green", [ "v0" ] ],
+      [ "keypad1:R4", "esp:17", "green", [ "v0" ] ],
+      [ "keypad1:C1", "esp:16", "green", [ "v0" ] ],
+      [ "keypad1:C2", "esp:4", "green", [ "v0" ] ],
+      [ "esp:2", "keypad1:C3", "green", [ "h0" ] ],
+      [ "keypad1:C4", "esp:15", "green", [ "v0" ] ],
+      [ "lcd1:SDA", "esp:21", "green", [ "h-28.8", "v134.6", "h288", "v96" ] ],
+      [ "lcd1:SCL", "esp:22", "green", [ "h-19.2", "v115.5", "h278.4", "v86.4" ] ],
+      [ "lcd1:GND", "esp:GND.1", "black", [ "h-48", "v240" ] ],
+      [ "lcd1:VCC", "esp:5V", "red", [ "h-38.4", "v0.1" ] ]
+    ],
+    "dependencies": {}
+  }
