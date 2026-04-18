@@ -137,20 +137,26 @@ pio run
 ### 🔹 Criar um usuário com senha
 
 Via SQL: 
+
+```
 INSERT INTO usuarios (senha) VALUES ('1234');
+```
 
 Via API (Postman) 
-Método: POST
 
+Método: POST
+```
 URL:
 http://SEU_IP:8081/API/cadastrar
+```
 
+```
 Body (JSON):
 {
   "nome":"João",
   "senha": "1234"
 }
-
+```
 ## 📲 Como funciona
 
 1. Usuário digita a senha no keypad
