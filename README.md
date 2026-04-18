@@ -125,8 +125,7 @@ ou execute a classe principal (`SenhaApplication`)
 
 ### 🔹 ESP32 (PlatformIO + Wokwi)
 
-1. Abra o projeto no VS Code ou IntelliJ
-2. Compile:
+1. Compile:
 
 ```bash
 pio run
