@@ -131,7 +131,7 @@ ou execute a classe principal (`SenhaApplication`)
 pio run
 ```
 
-3. Inicie a simulação no Wokwi pelo arquivo diagram.json
+2. Inicie a simulação no Wokwi pelo arquivo diagram.json
 
 ---
 ### 🔹 Criar um usuário com senha
@@ -142,7 +142,7 @@ Via SQL:
 INSERT INTO usuarios (senha) VALUES ('1234');
 ```
 
-Via API (Postman) 
+Via API (Postman):
 
 Método: POST
 ```
