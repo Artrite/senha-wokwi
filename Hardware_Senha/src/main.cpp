@@ -59,7 +59,7 @@ String validarSenha(String senha) {
         return String("Erro de conexao");
     }
 
-    http.begin("http://192.168.1.44:8081/API/validar");
+    http.begin("(seuIP)/API/validar");
     http.addHeader("Content-Type", "application/json");
 
     String payload = "{\"senha\":\"" + senha + "\"}";
