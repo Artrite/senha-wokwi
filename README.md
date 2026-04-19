@@ -176,7 +176,7 @@ Body (JSON):
 
 ---
 
-## ⚠️ Problemas comuns
+## ⚠️ Possíveis Problemas
 
 ### ❌ Erro de conexão
 
